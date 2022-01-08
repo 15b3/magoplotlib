@@ -5,7 +5,7 @@ Attentive External Library of [matplotlib](https://matplotlib.org/stable/index.h
 ## Features
 
 - plotting timestamp on a Figure.
-![timestamp example](images/add_timestamp.png")
+![timestamp example](images/add_timestamp.png)
 
 ## Requirements
 
