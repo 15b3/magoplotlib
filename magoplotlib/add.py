@@ -58,3 +58,25 @@ def add_timestamp(fig, loc="bottom right", fmt=None, dt=None, tz=None, fontdict=
         dt = datetime.datetime.now(tz)
 
     fig.text(x, y, dt.strftime(fmt), ha=ha, va=va, fontdict=fontdict, **kwargs)
+
+
+def add_message(ax, *, s="sample", fontsize=30, color="grey", x=0.5, y=0.5, rotation=45, fontweight="bold", va="center", ha="center", transform=None, fontdict=None, **kwargs):
+    """add message on axes
+
+    Parameters
+    ----------
+    ax : Axes
+    s : str
+        text
+    fontsize : int
+        default: 30
+    color :
+        default: gray
+    fontdict : dict, optional
+        pass to
+    kwargs : dict, Optional
+        Text Property.
+    """
+    if transform is None:
+        transform = ax.transAxes
+    ax.text(0.5, 0.5, s, va="center", ha="center", color=color, fontweight=fontweight, transform=transform, rotation=rotation, fontsize=fontsize, **kwargs)

@@ -5,7 +5,12 @@ Attentive External Library of [matplotlib](https://matplotlib.org/stable/index.h
 ## Features
 
 - plotting timestamp on a Figure.
+
 ![timestamp example](images/add_timestamp.png)
+
+- plotting message on an Axes.
+
+![message example](images/add_message.png)
 
 ## Requirements
 
